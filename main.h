@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 /**
- * struct buffer - buffer structure for our implimentation of printf
+ * struct buffer - buffer structure for our implementation of printf
  * @buf: buffer to write characters
  * @tmpbuf: tmp buffer to write to before putting in buffer
  * @format: the string passed to our printf
