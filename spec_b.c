@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
-* _spec_b - sends va-arg with appropriat tags into buffer
+* _spec_b - sends va-arg with appropriate tags into buffer
 * @b_r: a pointer to the struct buffer
 * @t: a pointer to the struct tags
 */
+
 void _spec_b(buffer *b_r, tags *t)
 {
 	unsigned int n_hold;
@@ -15,11 +17,13 @@ void _spec_b(buffer *b_r, tags *t)
 	_spec_num_help(b_r, t, num_str, 0);
 	free(num_str);
 }
+
 /**
-* _spec_o - sends va-arg with appropriat tags into buffer
+* _spec_o - sends va-arg with appropriate tags into buffer
 * @b_r: a pointer to the struct buffer
 * @t: a pointer to the struct tags
 */
+
 void _spec_o(buffer *b_r, tags *t)
 {
 	int n_hold;
@@ -31,11 +35,13 @@ void _spec_o(buffer *b_r, tags *t)
 	_spec_num_help(b_r, t, num_str, 0);
 	free(num_str);
 }
+
 /**
-* _spec_X - sends va-arg with appropriat tags into buffer
+* _spec_X - sends va-arg with appropriate tags into buffer
 * @b_r: a pointer to the struct buffer
 * @t: a pointer to the struct tags
 */
+
 void _spec_X(buffer *b_r, tags *t)
 {
 	unsigned int n_hold;
@@ -47,11 +53,13 @@ void _spec_X(buffer *b_r, tags *t)
 	_spec_num_help(b_r, t, num_str, 0);
 	free(num_str);
 }
+
 /**
-* _spec_x - sends va-arg with appropriat tags into buffer
+* _spec_x - sends va-arg with appropriate tags into buffer
 * @b_r: a pointer to the struct buffer
 * @t: a pointer to the struct tags
 */
+
 void _spec_x(buffer *b_r, tags *t)
 {
 	unsigned int n_hold;
@@ -63,11 +71,13 @@ void _spec_x(buffer *b_r, tags *t)
 	_spec_num_help(b_r, t, num_str, 0);
 	free(num_str);
 }
+
 /**
-* _spec_u - sends va-arg with appropriat tags into buffer
+* _spec_u - sends va-arg with appropriate tags into buffer
 * @b_r: a pointer to the struct buffer
 * @t: a pointer to the struct tags
 */
+
 void _spec_u(buffer *b_r, tags *t)
 {
 	unsigned int n_hold;
