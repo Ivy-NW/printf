@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * _spec_num_help - applies the appropriate tags to a number specificer
+ * _spec_num_help - applies the appropriate tags to a number specifier
  * @b_r: a pointer to the struct buffer
  * @t: a pointer to the struct tag
  * @num_str: a pointer to a number that is converted into a string
@@ -40,12 +41,14 @@ void _spec_num_help(buffer *b_r, tags *t, char *num_str, int minus)
 		_write(b_r, buf_str[j]);
 	free(buf_str);
 }
+
 /**
  * get_sign - get the sign and adds it to front string
  * @t: struct tag
  * @minus: minus sign
  * @front: the char * to store the sign
  */
+
 void get_sign(tags *t, int minus, char *front)
 {
 	if (t->spec == 'd' || t->spec == 'i' || t->spec == 'p')
@@ -67,6 +70,7 @@ void get_sign(tags *t, int minus, char *front)
 			front[1] = 'x';
 	}
 }
+
 /**
  *check_prec - check if there is prec and remove 0 flag
  * @tmp_str: ptr to a tmp_str
@@ -76,6 +80,7 @@ void get_sign(tags *t, int minus, char *front)
  *
  * Return: a pointer to tmp_str
  */
+
 char *check_prec(char *tmp_str, char *num_str, tags *t, int s_len)
 {
 	int i, j, l;
@@ -104,13 +109,15 @@ char *check_prec(char *tmp_str, char *num_str, tags *t, int s_len)
 	}
 	return (tmp_str);
 }
+
 /**
  * _out_of_time - applies the format tags to and pushing it into buf_str
  * @buf_str: empty string to be filled
  * @tmp_str: prac format tag + the num_to_str
  * @front: sign for num_to_str
- * @t: pointer to stuct tag
+ * @t: pointer to struct tag
  */
+
 void _out_of_time(char *buf_str, char *tmp_str, char *front, tags *t)
 {
 	int i, k;
@@ -148,7 +155,7 @@ void _out_of_time(char *buf_str, char *tmp_str, char *front, tags *t)
 			/*add the front*/
 			while (front[k] != '\0')
 				buf_str[k] = front[k], k++;
-			/*add the remiaing space with width*/
+			/*add the remaining space with width*/
 			while (k < t->width)
 				buf_str[k++] = tmp_str[i++];
 		}
