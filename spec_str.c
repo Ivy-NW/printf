@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _spec_s - sends va_arg with appropriate tags into buffer
  * @b_r: a pointer to the struct buffer
  * @t: a pointer to the struct tags
  */
+
 void _spec_s(buffer *b_r, tags *t)
 {
 	char *hold;
@@ -37,11 +39,13 @@ void _spec_s(buffer *b_r, tags *t)
 		_write(b_r, b_str[j]);
 	free(b_str);
 }
+
 /**
  * _spec_S - sends va_arg with appropriate tags into buffer
  * @b_r: a pointer to the struct buffer
  * @t: a pointer to the struct tags
  */
+
 void _spec_S(buffer *b_r, tags *t)
 {
 	char *hold, *holds;
@@ -76,6 +80,7 @@ void _spec_S(buffer *b_r, tags *t)
 	free(b_str);
 	free(holds);
 }
+
 /**
  * _str_whelp - sends va_arg with appropriate tags into buffer
  * @t: a pointer to the struct tags
@@ -84,6 +89,7 @@ void _spec_S(buffer *b_r, tags *t)
  *
  * Return: Pointer to b_str
  */
+
 char *_str_whelp(tags *t, char *hold, int hold_len)
 {
 	int i, b_str_size, minus, k, l;
@@ -116,12 +122,14 @@ char *_str_whelp(tags *t, char *hold, int hold_len)
 	}
 	return (b_str);
 }
+
 /**
  * _to_hex_unreadable - sends va_arg with appropriate tags into buffer
  * @hold: string to convert
  *
  * Return: Pointer to edited string
  */
+
 char *_to_hex_unreadable(char *hold)
 {
 	char *holdconv, *hexhold;
