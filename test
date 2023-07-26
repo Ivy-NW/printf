@@ -26,6 +26,7 @@
  *
  * Return: Always 0
  */
+
 int main(void)
 {
 	int i =  12;
@@ -95,8 +96,8 @@ int main(void)
 
 	printf("test210(considering null, spec d):%i.\n\n", n);
 
-	/*u specifer conditions*/
-	printf("u specifer conditions\n\n");
+	/*u specifier conditions*/
+	printf("u specifier conditions\n\n");
 
 	printf("test30(negative number with all flags):%+- 0#u.\n", -1);
 
@@ -117,7 +118,7 @@ int main(void)
 	printf("test38(considering null, spec u):%u.\n\n", n);
 
 	/*o, x, X specifier conditions*/
-	printf("o, x, X specifer conditions\n\n");
+	printf("o, x, X specifier conditions\n\n");
 
 	printf("test30(negative number with all flags):%+- 0#o, %+- 0#x, %+- 0#X.\n", -1, -1, -1);
 
@@ -138,7 +139,7 @@ int main(void)
 	printf("test38(consinder null, spec o, x, X):%o, %x, %X.\n\n", n, n, n);
 
 	/*binary specifier conditions*/
-	printf("b specifer conditions\n\n");
+	printf("b specifier conditions\n\n");
 
 	printf("test40(negative number with all flags):%+- 0#b.\n", -1);
 
@@ -159,7 +160,7 @@ int main(void)
 	printf("test48(considering null):%b.\n\n", n);
 
 	/*pointer specifier conditions*/
-	printf("p specifer conditions\n\n");
+	printf("p specifier conditions\n\n");
 
 	printf("test50(address number with all flags):%+- 0#9.5lhp.\n", &l);
 
@@ -171,7 +172,7 @@ int main(void)
 
 	printf("test54(width):%15p.\n", &l);
 
-	printf("test55(consinder null, spec p):%p.\n\n", n);
+	printf("test55(consider null, spec p):%p.\n\n", n);
 
 	/*printing % */
 	printf("printing %\n\n");
@@ -190,3 +191,4 @@ int main(void)
 
 	return (0);
 }
+
