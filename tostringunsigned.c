@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * _uint_to_str - convert an int into it's absolute value string
  * @n: number to convert
  *
  * Return: string to string'ed number
  */
+
 char *_uint_to_str(unsigned long int n)
 {
 	char *s;
@@ -26,12 +28,14 @@ char *_uint_to_str(unsigned long int n)
 	_revstr(s);
 	return (s);
 }
+
 /**
  * _uint_to_hexstr - convert a long int into a hex string
  * @n: int to convert to hex
  *
  * Return: string to string'ed number
  */
+
 char *_uint_to_hexstr(unsigned long int n)
 {
 	char *s;
@@ -55,12 +59,14 @@ char *_uint_to_hexstr(unsigned long int n)
 	_revstr(s);
 	return (s);
 }
+
 /**
  * _uint_to_caphexstr - convert a long int into a hex string
  * @n: int to convert to hex
  *
  * Return: string to string'ed number
  */
+
 char *_uint_to_caphexstr(unsigned long int n)
 {
 	char *s;
@@ -84,12 +90,14 @@ char *_uint_to_caphexstr(unsigned long int n)
 	_revstr(s);
 	return (s);
 }
+
 /**
  * _uint_to_octstr - convert a long int into a oct string
  * @n: int to convert to hex
  *
  * Return: string to string'ed number
  */
+
 char *_uint_to_octstr(unsigned long int n)
 {
 	char *s;
@@ -111,12 +119,14 @@ char *_uint_to_octstr(unsigned long int n)
 	_revstr(s);
 	return (s);
 }
+
 /**
  * _uint_to_binstr - convert a long int into a bin string
  * @n: int to convert to hex
  *
  * Return: string to string'ed number
  */
+
 char *_uint_to_binstr(unsigned long int n)
 {
 	char *s;
