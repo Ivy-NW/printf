@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * _init_tag - Initialize tag for parsing
- * @t: tags stuct to fill in with tags
+ * @t: tags struct to fill in with tags
  */
+
 void _init_tag(tags *t)
 {
 	/* Initialize tag to default values*/
@@ -13,11 +15,13 @@ void _init_tag(tags *t)
 	t->flags[0] = '\0', t->flags[1] = '\0', t->flags[2] = '\0';
 	t->flags[3] = '\0', t->flags[4] = '\0'; t->flags[5] = '\0';
 }
+
 /**
  * _init_buffer - Initialize the buffer structure
  * @b_r: copy of the buffer address
  * @format: copy of the format we will be parsing into buffer
  */
+
 void _init_buffer(buffer *b_r, const char *format)
 {
 	b_r->format = format;
