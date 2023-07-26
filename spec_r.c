@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _spec_r - sends va_arg with appropriate tags into buffer
  * @b_r: a pointer to the struct buffer
  * @t: a pointer to the struct tags
  */
+
 void _spec_r(buffer *b_r, tags *t)
 {
 	char *hold, *holdr;
@@ -46,11 +48,13 @@ void _spec_r(buffer *b_r, tags *t)
 		free(holdr);
 	}
 }
+
 /**
  * _spec_R - sends va_arg with appropriate tags into buffer
  * @b_r: a pointer to the struct buffer
  * @t: a pointer to the struct tags
  */
+
 void _spec_R(buffer *b_r, tags *t)
 {
 	char *hold, *holdr;
@@ -93,10 +97,12 @@ void _spec_R(buffer *b_r, tags *t)
 		free(holdr);
 	}
 }
+
 /**
  * _to_rot13 - rot13s given string
  * @s: string to rot13
  */
+
 void _to_rot13(char *s)
 {
 	char key[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
