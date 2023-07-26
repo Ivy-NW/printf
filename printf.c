@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * _printf - Recreate stdio.h's printf
  * @format: Formatted string to write to stdout
  *
  * Return: Number of chars written
  */
+
 int _printf(const char *format, ...)
 {
 	/* Create buffer structure b_r and initalize */
@@ -31,20 +33,24 @@ int _printf(const char *format, ...)
 	free(b_r.tmpbuf);
 	return (b_r.printed);
 }
+
 /**
  * _copy - directly copy from format to buffer
  * @b_r: the buffer structure
  */
+
 void _copy(buffer *b_r)
 {
 	while (b_r->format[b_r->fp] != '%' && b_r->format[b_r->fp] != '\0')
 		_write(b_r, b_r->format[b_r->fp++]);
 
 }
+
 /**
  * _parse - take string from % and parse tags into correct string for buffer
  * @b_r: the buffer structure
  */
+
 void _parse(buffer *b_r)
 {
 	int i;
@@ -87,12 +93,14 @@ void _parse(buffer *b_r)
 	}
 	i = 0;
 }
+
 /**
  * _parse_tag - Build out the tags struct with tags found
  * @b_r: the buffer structure
  * @table: Parsing table to read the '%___' from format
  * @t: tags to send to our specifier function
  */
+
 void _parse_tag(buffer *b_r, tags *t, parse_table *table)
 {
 	int depth, i, j;
