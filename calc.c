@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * __atoi - take string, and find number the starts at point n
  * @s: string to read
@@ -6,6 +7,7 @@
  *
  * Return: Number parsed
  */
+
 int __atoi(const char *s, int n)
 {
 	int number, i;
@@ -20,12 +22,14 @@ int __atoi(const char *s, int n)
 	}
 	return (number);
 }
+
 /**
- * str_len - find the str len
+ * str_len - find the string length
  * @str: a pointer to a str
  *
  * Return: length of string
  */
+
 int str_len(char *str)
 {
 	int i;
@@ -35,12 +39,14 @@ int str_len(char *str)
 		i++;
 	return (i);
 }
+
 /**
  * _revstr - find the str len
  * @s: a pointer to a str
  *
  * Return: length of string
  */
+
 void _revstr(char *s)
 {
 	int len, i;
