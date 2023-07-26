@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
-* _spec_d - sends va-arg with appropriat tags into buffer
+* _spec_d - sends va-arg with appropriate tags into buffer
 * @b_r: a pointer to the struct buffer
 * @t: a pointer to the struct tags
 */
+
 void _spec_d(buffer *b_r, tags *t)
 {
 	int ten_power, n_hold, minus, i;
@@ -41,6 +43,7 @@ void _spec_d(buffer *b_r, tags *t)
  *
  * Return: the length of the number
  */
+
 int num_len(int n)
 {
 	int num_len;
