@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _write - Add char to buffer, write and reset buffer if full.
  * @b_r: buffer to write
  * @c: char to write
  */
+
 void _write(buffer *b_r, char c)
 {
 	if (b_r->bp == 1024)
@@ -14,11 +16,13 @@ void _write(buffer *b_r, char c)
 	}
 	b_r->buf[b_r->bp++] = c;
 }
+
 /**
  * _write_str - Add string to buffer, write and reset buffer if full.
  * @b_r: buffer to write
  * @s: string to write
  */
+
 void _write_str(buffer *b_r, char *s)
 {
 	while (*s != '\0')
@@ -32,10 +36,12 @@ void _write_str(buffer *b_r, char *s)
 		b_r->buf[b_r->bp++] = *s++;
 	}
 }
+
 /**
  * _write_tmpbuf - Add tmpbuf to buffer, write and reset buffer if full.
  * @b_r: buffer to write
  */
+
 void _write_tmpbuf(buffer *b_r)
 {
 	int i;
